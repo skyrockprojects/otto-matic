@@ -33,6 +33,12 @@ void setup() {
 void loop() {
   // put your main code here, to run repeatedly:
 
+  // the function of this code is to make the foot raise by 30 degrees 
+  // and to conitnue to increase the anges with each loop of the code.  
+  // we ue i to refer to the servo number.  This is to randomly select the
+  // servo and then the other info e.g. the numbers etc are used as parameters
+  //for that random selection.
+
   for(int i=0;i<2;i++) servo[i].write(i*30+30);
   delay(1000);
   for(int i=0;i<2;i++) servo[i].write(90);
